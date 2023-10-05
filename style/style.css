@@ -1,3 +1,9 @@
+:root {
+  --main-font: "Nunito", sans-serif;
+  --light-color: #fff;
+  --main-color: #ed6436;
+}
+
 *,
 ::before,
 ::after {
@@ -5,7 +11,7 @@
 }
 
 html {
-  font-family: "Nunito", sans-serif;
+  font-family: var(--main-font);
 }
 
 body {
@@ -30,4 +36,14 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.basic-container {
+  padding: 20px;
+}
+
+.main-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--main-color);
 }
