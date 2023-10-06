@@ -53,6 +53,7 @@ a {
 }
 
 .pet-activities__header {
+  margin-bottom: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -68,14 +69,48 @@ a {
 .button {
   margin: 10px 0px;
   padding: 10px;
-  width: 120px;
+  width: 100px;
   font-family: inherit;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--light-color);
-  border: 0px solid var(--main-color);
+  border: 1px solid var(--light-color);
   background-color: var(--main-color);
-  border-radius: 0% 25% 25% 25%;
+  border-radius: 0 15px 15px 15px;
+}
+
+.button:hover {
+  background-color: var(--light-color);
+  border: solid 1px var(--main-color);
+  color: var(--main-color);
+  cursor: pointer;
+}
+
+.pet-activities__cards {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.pet-activities__card {
+}
+
+.pet-activities__card-image {
+  border-radius: 20px 20px 20px 20px;
+  object-fit: cover;
+  width: 250px;
+  height: 300px;
+}
+
+.pet-activities__card-texts {
+  visibility: hidden;
+}
+
+.pet-activities__card-type {
+}
+
+.pet-activities__card-title {
 }
 
 @media screen and (max-width: 780px) {
@@ -92,5 +127,22 @@ a {
     font-size: 3rem;
     text-align: center;
     width: 100%;
+  }
+
+  .pet-activities__cards {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pet-activities__card {
+    width: 300px;
+    height: 200px;
+  }
+
+  .pet-activities__card-image {
+    width: 300px;
+    height: 200px;
   }
 }
